@@ -396,7 +396,9 @@ button[type="submit"]:hover{
   /* 横並び要素 */
   .col {
     /* フレックスアイテムに対する指定 */
-    
+    -webkit-box-flex: 0;
+    -ms-flex-:0 1 32% ;
+    flex:0 1 32%;
     margin: 0;
   }
   /* --------------------------------------------------
@@ -404,11 +406,11 @@ button[type="submit"]:hover{
   -------------------------------------------------- */
   /* 入場料（テーブル） */
   .price-table {
-    
+    font-size: 16px;
   }
   /* <th>と<td>に対する指定 */
   .price-table th, .price-table td {
-    
+    padding: 20px;
   }
   /* --------------------------------------------------
   お問い合わせフォーム
@@ -416,23 +418,29 @@ button[type="submit"]:hover{
   /* フォームの3つのブロックに対する指定 */
   .form-group {
     /* flexbox（横並びにする要素の親に指定） */
-    
-    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 800px;
     /* 横幅の最大値 */
     margin-bottom: 10px;
   }
   /* 項目名に対する指定 */
   .form-label {
     /* フレックスアイテムに対する指定 */
-    
-    
+    -webkit-box-flex: 0;
+    -ms-flex-:0 0 12em;
+    flex: 0 0 12em;
+    max-width: 12em;
     margin: 0;
     padding-top: 5px;
   }
   /* 入力欄を囲む<div>に対する指定 */
   .form-col {
     /* フレックスアイテムに対する指定 */
-    
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
   }
 }
 /* --------------------------------------------------
